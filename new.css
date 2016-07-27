@@ -3094,7 +3094,7 @@ body {
 
 
 			.res #progressIndicator h2 {
-				color: #4D5763;
+				color: #dedede;
 			}
 
 			.res .NERPageMarker {
@@ -3102,7 +3102,7 @@ body {
 				border: none;
 				background-color: #dedede;
 				padding: 16px 0px;
-				margin: 0px;
+				margin: 16px 0px 16px 0px;
 			}
 			
 			.res .neverEndingReddit {
