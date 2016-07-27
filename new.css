@@ -1760,7 +1760,7 @@ body {
 				letter-spacing: 0px;
 			}
 
-				.sidebox.submit.submit-text .morelink a:after {font-size: 14px; content:"Submit Text";}
+				.sidebox.submit.submit-text .morelink a:after {font-size: 14px; content:"Submit an Exchange!";}
 				.sidebox.submit.submit-link .morelink a:after {font-size: 14px; content:"Submit Link";}
 
 			.side .sidebox.submit-text .morelink:before, .side .sidebox.submit-link .morelink:after {
@@ -1896,7 +1896,7 @@ body {
 
 			.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4 {
 				padding: 0 16px;
-				background-color: #FFF;
+				background-color: #ebebeb;
 				border: none;
 				border-radius: 2px;
 				color: #24a0ed;
@@ -1989,20 +1989,6 @@ body {
 		/* Recently viewed links */
 		.gadget .midcol {width: 38px;}
 
-		/* Credits */
-		.side:after {
-			display: block;
-			margin: 0px 0px;
-			padding: 10px 0px;
-			color: #24A0ED;
-			content: "CSS theme based on /r/Naut.";
-			text-transform: none;
-			font-size: 16px;
-			font-family: Lato, arial, sans-serif;
-			position: absolute;
-			width: 320px;
-			border: 1px solid rgba(0, 0, 0, 0.06);
-			text-align: center;
 		}
 
 
@@ -2760,7 +2746,7 @@ body {
 
 				.wiki-page .wiki-page-content hr {
 					border-style: solid;
-					border-color: #edf1f3
+					border-color: #8a8a8a
 				}
 
 				.wiki-page .wiki-page-content em {color: #484848;}
@@ -3088,13 +3074,13 @@ body {
 			padding: 16px;
 			margin: 16px 0px 16px 0px;
 			color: #b3b3b3;
-			background-color: #fff;
+			background-color: #dedede;
 			height: inherit;
 		}
 
 
 			.res #progressIndicator h2 {
-				color: #dedede;
+				color: #4D5763;
 			}
 
 			.res .NERPageMarker {
@@ -3103,14 +3089,6 @@ body {
 				background-color: #dedede;
 				padding: 16px 0px;
 				margin: 16px 0px 16px 0px;
-			}
-			
-			.res .neverEndingReddit {
-				border-radius: 0px;
-				border: none;
-				background-color: #dedede;
-				padding: 16px 0px;
-				margin: 0px;
 			}
 
 			.res .sitetable .sitetable {margin-right: 0px;}
@@ -4089,7 +4067,7 @@ body.res-nightmode .md>ol,body.res-nightmode .md>ul { border-color:#666 }
 .md.wiki pre,.usertext-body pre,li>code,p>code{
 	overflow:auto;
 	border:1px solid #ccc;
-	background-color:#fbf9f4;
+	background-color:#ebebeb;
 	color:#222!important;
 	font-size:11px
 }
