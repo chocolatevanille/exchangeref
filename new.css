@@ -672,7 +672,7 @@ body {
 						font-size: 11px;
 					}
 
-						.link .entry .tagline .userattrs a.moderator {background-color: #27b062;}
+						.link .entry .tagline .userattrs a.moderator {background-color: #800080;}
 
 
 																							.RESUserTagImage::after { display: none }
@@ -959,7 +959,7 @@ body {
 					background-position: 0px -181px;
 				}
 
-						/*.linkflair-mod a {color: #27b062!important;}*/
+						/*.linkflair-mod a {color: #800080!important;}*/
 						.linkflair-mod .thumbnail.default, .linkflair-mod .thumbnail.self {background: url(%%spritesheet%%) -96px -48px !important;}
 
 				/* Reported & Spam/Remove/Approves */
@@ -1022,12 +1022,12 @@ body {
 					.thing.link.stickied a.title, .thing.link.stickied a, .thing.link.stickied .entry li .comments {
 													color: #EFEFEF!important;
 													text-shadow: 1px 1px #565656;}
-					.thing.link.stickied .expando-button:hover {background-color: #27b062!important;border-color: #27b062!important;}
+					.thing.link.stickied .expando-button:hover {background-color: #800080!important;border-color: #800080!important;}
 					.tagline .stickied-tagline {color: #b3b3b3;cursor: help;}
 
 
 				/* Sticky Comment */
-				.stickied.comment>.entry a, .stickied.comment .tagline .stickied-tagline {color: #27b062!important}
+				.stickied.comment>.entry a, .stickied.comment .tagline .stickied-tagline {color: #800080!important}
 
 				/* Ad */
 				.content .spacer {margin: 0;}
@@ -1422,12 +1422,12 @@ body {
 
 
 				/* Locked Post */
-				.reddit-infobar.with-icon.locked-infobar {background-color:#27B062 }
+				.reddit-infobar.with-icon.locked-infobar {background-color:#800080 }
 					.reddit-infobar.with-icon.locked-infobar .md {color: #fff;}
 
 				.reddit-infobar.with-icon.locked-infobar p:after {content: " Sort comments by new to find out more."}
 				.reddit-infobar.with-icon.locked-infobar:before {
-					background-color: #27B062;
+					background-color: #800080;
 					border-right: 1px solid rgba(0, 0, 0, 0.08);
 				}
 
@@ -1537,7 +1537,7 @@ body {
 				div.titlebox span.word {display: none;}
 				.titlebox .users-online {display: inline;}
 				.titlebox .users-online:before {display: none;}
-				div.titlebox span.number:after {content: " traders";}
+				div.titlebox span.number:after {content: " trainers want to be the very best.";}
 				.titlebox .users-online .number {font-style: italic;}
 
 				.titlebox .users-online .number:before {
@@ -1988,10 +1988,24 @@ body {
 
 		/* Recently viewed links */
 		.gadget .midcol {width: 38px;}
+		
+		/* Credits */
+		.side:after {
+			display: block;
+			margin: 0px 0px;
+			padding: 10px 0px;
+			color: #24A0ED;
+			content: "CSS theme based on /r/Naut.";
+			text-transform: none;
+			font-size: 16px;
+			font-family: Lato, arial, sans-serif;
+			position: absolute;
+			width: 320px;
+			border: 1px solid rgba(0, 0, 0, 0.06);
+			text-align: center;
 
 		}
-
-
+		
 
 		/* Comments Page */
 		body.comments-page > .content {margin-top: 8px;}
@@ -2058,7 +2072,7 @@ body {
 					}
 
 			.commentarea>.usertext {
-				background-color: #FAFAFA !important;
+				background-color: #fafafa !important;
 				margin: -58px 0 16px 0;
 				padding: 64px 16px 16px 16px !important;
 				overflow: visible;
@@ -2194,7 +2208,7 @@ body {
 								}
 
 								.tagline .moderator, .green {
-									color: #27b062 !important;
+									color: #800080 !important;
 									font-weight: bold;
 								}
 
@@ -2302,7 +2316,7 @@ body {
 					top: 393px;
 					padding: 16px;
 					width: 320px;
-					background-color: #ceddfc;
+					background-color: #fafafa;
 					border-radius: 2px;
 					box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
 					border: none;
@@ -2956,7 +2970,7 @@ body {
 
 		/* Bunch of RES (Reddit Enhancement Suite) Fixes */
 		.res .link .tagline a.voteWeight {background-color: transparent !important;}
-		.res .thing .tagline .author.moderator {background-color: #27b062 !important;padding: 1px 4px;border-radius: 1px;}
+		.res .thing .tagline .author.moderator {background-color: #800080 !important;padding: 1px 4px;border-radius: 1px;}
 		#header-bottom-right #userbarToggle + * {margin-left: 0px !important;}
 
 		.res .srSep {color: rgba(255,255,255,0.45);}
