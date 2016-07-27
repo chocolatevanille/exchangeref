@@ -1537,7 +1537,7 @@ body {
 				div.titlebox span.word {display: none;}
 				.titlebox .users-online {display: inline;}
 				.titlebox .users-online:before {display: none;}
-				div.titlebox span.number:after {content: " readers";}
+				div.titlebox span.number:after {content: " traders";}
 				.titlebox .users-online .number {font-style: italic;}
 
 				.titlebox .users-online .number:before {
