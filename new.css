@@ -2809,6 +2809,14 @@ body {
 				padding: 16px 0px;
 				margin: 0px;
 			}
+			
+			.res .neverEndingReddit {
+				border-radius: 0px;
+				border: none;
+				background-color: transparent;
+				padding: 16px 0px;
+				margin: 0px;
+			}
 
 			.res .sitetable .sitetable {margin-right: 0px;}
 
