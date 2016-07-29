@@ -504,35 +504,6 @@ body {
 
 					/* Vote Radius */
 
-
-				/* Thumbnails */
-				.thumbnail {
-					width: 80px;
-					height: 56px;
-					margin: 0 16px 0 0;
-				}
-
-											.thumbnail img {
-													min-height: 56px;
-													min-width: 80px;
-													max-width: none;
-													position: relative;
-													transform: translateY(-50%);
-													top: 50%;
-											}
-
-					.stickied .thumbnail, .thumbnail.default, .thumbnail.self, .over18.link .thumbnail {width: 80px; height: 56px;}
-
-					.thumbnail.default 			{background: url(%%spritesheet%%) -176px -048px;}
-					.thumbnail.self 			{background: url(%%spritesheet%%) -096px -104px;}
-					.stickied .thumbnail 		{background: url(%%spritesheet%%) -096px -048px;}
-					.over18.link .thumbnail 	{background: url(%%spritesheet%%) -176px -104px !important;}
-						.over18.link .thumbnail img {display: none;}
-
-
-					a.thumbnail[href*="reddit.com"] 	{background: url(%%spritesheet%%) -176px -160px;}
-						a.thumbnail[href*="reddit.com"] img {display: none;}
-
 			/* Inner Post Area */
 			.link .entry {
 				padding: 3px;
@@ -1371,7 +1342,7 @@ body {
 				div.titlebox span.word {display: none;}
 				.titlebox .users-online {display: inline;}
 				.titlebox .users-online:before {display: none;}
-				div.titlebox span.number:after {content: " trainers want to be the very best.";}
+				div.titlebox span.number:after {content: " readers";}
 				.titlebox .users-online .number {font-style: italic;}
 
 				.titlebox .users-online .number:before {
