@@ -3573,6 +3573,10 @@ background-position: -181px -661px;
 background-position: -680px -391px;
 }
 
+.flair-milotic::before, a[href^="#pk-milotic"]{
+background-position: -571px -361px;
+}
+
 .flair-shaymin::before, a[href^="#pk-shaymin"]{
 background-position: -210px -541px;
 }
