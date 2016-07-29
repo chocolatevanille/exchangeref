@@ -1553,7 +1553,7 @@ body {
 				div.titlebox span.word {display: none;}
 				.titlebox .users-online {display: inline;}
 				.titlebox .users-online:before {display: none;}
-				div.titlebox span.number:after {content: " trainers want to be the very best.";}
+				div.titlebox span.number:after {content: " readers";}
 				.titlebox .users-online .number {font-style: italic;}
 
 				.titlebox .users-online .number:before {
@@ -1776,7 +1776,7 @@ body {
 				letter-spacing: 0px;
 			}
 
-				.sidebox.submit.submit-text .morelink a:after {font-size: 14px; content:"Submit an Exchange!";}
+				.sidebox.submit.submit-text .morelink a:after {font-size: 14px; content:"Create a Reference!";}
 				.sidebox.submit.submit-link .morelink a:after {font-size: 14px; content:"Submit Link";}
 
 			.side .sidebox.submit-text .morelink:before, .side .sidebox.submit-link .morelink:after {
