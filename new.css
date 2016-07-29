@@ -301,26 +301,24 @@ body {
 		/* Snoo */
 		#header-img.default-header, #header-img {
 			z-index: 99;
-			width: 0px;
+			width: 52px;
 			padding-left: 42px;
-			height: 42px;
-			background-image: url(%%spritesheet%%);
-			background-position: -80px -00px;
-			margin: 0 8px 0 0;
+			height: 75px;
+			background-image: url(%%alienred%%);
+			background-position: -00px -00px;
+			margin: -18px 8px 0 0;
 			vertical-align: top;
 			font-size: 0px;
 		}
-
-			#header-img.default-header:hover, #header-img:hover {background-position: -122px 0px;}
 
 		/* Reddit Name */
 		#header .pagename {font-size: 0;}
 
 			#header .pagename a {
 				display: inline-block;
-				line-height: 42px;
+				line-height: 60px;
 				color: #fff;
-				font-size: 32px;
+				font-size: 26px;
 				font-weight: bold;
 				font-family: Lato, arial, sans-serif;
 				font-variant: normal;
@@ -337,7 +335,7 @@ body {
 		}
 
 			#header .tabmenu {
-				margin: 12px 0 0 0;
+				margin: -6px 0 0 0;
 				display: block;
 				height: 42px;
 				line-height: 42px;
@@ -503,6 +501,35 @@ body {
 
 
 					/* Vote Radius */
+
+
+				/* Thumbnails */
+				.thumbnail {
+					width: 80px;
+					height: 56px;
+					margin: 0 16px 0 0;
+				}
+
+											.thumbnail img {
+													min-height: 56px;
+													min-width: 80px;
+													max-width: none;
+													position: relative;
+													transform: translateY(-50%);
+													top: 50%;
+											}
+
+					.stickied .thumbnail, .thumbnail.default, .thumbnail.self, .over18.link .thumbnail {width: 80px; height: 56px;}
+
+					.thumbnail.default 			{background: url(%%spritesheet%%) -176px -048px;}
+					.thumbnail.self 			{background: url(%%spritesheet%%) -096px -104px;}
+					.stickied .thumbnail 		{background: url(%%spritesheet%%) -096px -048px;}
+					.over18.link .thumbnail 	{background: url(%%spritesheet%%) -176px -104px !important;}
+						.over18.link .thumbnail img {display: none;}
+
+
+					a.thumbnail[href*="reddit.com"] 	{background: url(%%spritesheet%%) -176px -160px;}
+						a.thumbnail[href*="reddit.com"] img {display: none;}
 
 			/* Inner Post Area */
 			.link .entry {
@@ -766,7 +793,191 @@ body {
 								font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 								transition: all 0.15s ease;
 							}
-							
+
+				/* Linkflairs */
+				.linkflairlabel {
+					padding: 1px 6px 1px 6px;
+					height: 18px;
+					border-radius: 1px;
+					border: 0px solid;
+					color: #fff;
+					font-weight: bold;
+					font-style: normal;
+					font-variant: normal;
+					font-size: 13px;
+					font-family: Arial, sans-serif;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					top: -2px;
+					background-color: #738491;
+				}
+
+				.linkflair-sphysical .linkflairlabel {
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px 3px;
+
+				}
+
+				.linkflair-bphysical .linkflairlabel {
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -24px;
+
+				}
+
+				.linkflair-svirtual .linkflairlabel {
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -50px;
+
+				}
+
+				.linkflair-bvirtual .linkflairlabel {
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -78px;
+
+				}
+
+				.linkflair-mod .linkflairlabel {
+						text-align: left!important;
+						background: none;
+						content: "";
+						padding: 1px 6px 1px 6px;
+						width: 104px;
+						max-width: 104px;
+						height: 27px;
+						border-radius: 1px;
+						border: 0px solid;
+						cursor: default;
+						vertical-align: middle;
+						position: relative;
+						background-image: url(%%linkflairs%%);
+						text-indent: -9999em;
+						background-position: -3px -104px;
+				}
+
+				.linkflair-closed .linkflairlabel {
+					text-align: left!important;
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -130px;
+				}
+
+				.linkflair-hacked .linkflairlabel {
+					text-align: left!important;
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -156px;
+				}
+
+				.linkflair-giveaway .linkflairlabel {
+					text-align: left!important;
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -182px;
+				}
+
+				.linkflair-ptcgo .linkflairlabel {
+					text-align: left!important;
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -208px;
+				}
+
+						/*.linkflair-mod a {color: #800080!important;}*/
+						.linkflair-mod .thumbnail.default, .linkflair-mod .thumbnail.self {background: url(%%spritesheet%%) -96px -48px !important;}
+
 				/* Reported & Spam/Remove/Approves */
 				body .content .thing.spam {background-color: #FFE9E6;}
 
@@ -1342,7 +1553,7 @@ body {
 				div.titlebox span.word {display: none;}
 				.titlebox .users-online {display: inline;}
 				.titlebox .users-online:before {display: none;}
-				div.titlebox span.number:after {content: " readers";}
+				div.titlebox span.number:after {content: " trainers want to be the very best.";}
 				.titlebox .users-online .number {font-style: italic;}
 
 				.titlebox .users-online .number:before {
@@ -2124,7 +2335,7 @@ body {
 					top: 393px;
 					padding: 16px;
 					width: 320px;
-					background-color: #fafafa;
+					background-color: #dedede;
 					border-radius: 2px;
 					box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.16);
 					border: none;
@@ -3832,11 +4043,11 @@ body.res-nightmode .md>ol,body.res-nightmode .md>ul { border-color:#666 }
 }
 .md ol li:before{counter-increment:inc 1;content:counter(inc,decimal) '. ';margin-right:4px;}
 
-.md h2+table{ border-color:rgba(172, 230, 213, 0.6)}
+.md h2+table{ border-color:rgba(69, 204, 164, 0.6)}
 
-.md h2+table td,.md h2+table th{border-right-color:rgba(172, 230, 213, 0.6)}
+.md h2+table td,.md h2+table th{border-right-color:rgba(69, 204, 164, 0.6)}
 
-.md h2+table thead,.md h2+table tr:nth-child(even){background-color:rgba(172, 230, 213, 0.6)}
+.md h2+table thead,.md h2+table tr:nth-child(even){background-color:rgba(69, 204, 164, 0.6)}
 
 .md h3+table{ border-color:#5BA2FF }
 
@@ -3860,9 +4071,9 @@ body.res-nightmode .md>ol,body.res-nightmode .md>ul { border-color:#666 }
 
 .md h6+table thead,.md h6+table tr:nth-child(even){background-color:rgba(255, 175, 54, 0.6)}
 
-.md h2+ol,.md h2+ul{border-left-color: rgba(172, 230, 213, 0.6); border-right-color: rgba(172, 230, 213, 0.6);}
+.md h2+ol,.md h2+ul{border-left-color: rgba(69, 204, 164, 0.6); border-right-color: rgba(69, 204, 164, 0.6);}
 
-.md h2+ol li:nth-child(odd),.md h2+ul li:nth-child(odd){background-color:rgba(172, 230, 213, 0.6)}
+.md h2+ol li:nth-child(odd),.md h2+ul li:nth-child(odd){background-color:rgba(69, 204, 164, 0.6)}
 
 .md h3+ol,.md h3+ul{border-left-color:#CAE1FF; border-right-color: #CAE1FF;}
 
@@ -3896,6 +4107,70 @@ body.res-nightmode .md>ol,body.res-nightmode .md>ul { border-color:#666 }
 code{line-height:1.5em}
 
 li>code,p>code{padding:0 3px;color:#222!important}
+
+.md [href$="#bphysical"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -25px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#sphysical"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px 0px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#bvirtual"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -78px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#svirtual"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -52px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#modpost"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -104px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#hacked"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -157px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#ptcgo"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -209px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#giveaway"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -183px;
+	width: 100px;
+	height: 24px;
+}
 
 .md [href$="#sdb-mods"] {
 	display: block;
