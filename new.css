@@ -847,7 +847,7 @@ body {
 					position: relative;
 					background-image: url(%%linkflairs%%);
 					text-indent: -9999em;
-					background-position: 0px -23px;
+					background-position: 0px -24px;
 
 				}
 
@@ -865,7 +865,7 @@ body {
 					position: relative;
 					background-image: url(%%linkflairs%%);
 					text-indent: -9999em;
-					background-position: 0px -51px;
+					background-position: 0px -50px;
 
 				}
 
@@ -883,7 +883,7 @@ body {
 					position: relative;
 					background-image: url(%%linkflairs%%);
 					text-indent: -9999em;
-					background-position: 0px -76px;
+					background-position: 0px -78px;
 
 				}
 
@@ -902,7 +902,7 @@ body {
 						position: relative;
 						background-image: url(%%linkflairs%%);
 						text-indent: -9999em;
-						background-position: -3px -103px;
+						background-position: -3px -104px;
 				}
 
 				.linkflair-closed .linkflairlabel {
@@ -920,7 +920,7 @@ body {
 					position: relative;
 					background-image: url(%%linkflairs%%);
 					text-indent: -9999em;
-					background-position: 0px -131px;
+					background-position: 0px -130px;
 				}
 
 				.linkflair-hacked .linkflairlabel {
@@ -956,8 +956,26 @@ body {
 					position: relative;
 					background-image: url(%%linkflairs%%);
 					text-indent: -9999em;
-					background-position: 0px -181px;
+					background-position: 0px -182px;
 				}
+				
+				.linkflair-ptcgo .linkflairlabel {
+					text-align: left!important;
+					background: none;
+					content: "";
+					padding: 1px 6px 1px 6px;
+					width: 104px;
+					max-width: 104px;
+					height: 27px;
+					border-radius: 1px;
+					border: 0px solid;
+					cursor: default;
+					vertical-align: middle;
+					position: relative;
+					background-image: url(%%linkflairs%%);
+					text-indent: -9999em;
+					background-position: 0px -208px;
+				}				
 
 						/*.linkflair-mod a {color: #800080!important;}*/
 						.linkflair-mod .thumbnail.default, .linkflair-mod .thumbnail.self {background: url(%%spritesheet%%) -96px -48px !important;}
@@ -1728,7 +1746,7 @@ body {
 			top: 350px;
 			background-color: #0079d3;
 			background-image: none !important;
-			width: 152px;
+			width: 320px;
 			height: 36px;
 			border-radius: 2px;
 			line-height: 36px;
@@ -1750,7 +1768,7 @@ body {
 					box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0px 4px 0 rgba(0,0,0,.12);
 				}
 
-			.sidebox.submit.submit-text .morelink {margin-left: 168px;}
+			.sidebox.submit.submit-text .morelink {margin-left: 0px;}
 
 
 			.morelink a {
@@ -1774,7 +1792,10 @@ body {
 				background-color: rgba(0,0,0,0.08);
 				font-weight: normal;
 				z-index: -1;
+				display: none;
 			}
+
+
 
 				.side .sidebox.submit-link .morelink:after {left: 168px;}
 
@@ -1988,7 +2009,7 @@ body {
 
 		/* Recently viewed links */
 		.gadget .midcol {width: 38px;}
-		
+
 		/* Credits */
 		.side:after {
 			display: block;
@@ -2005,7 +2026,7 @@ body {
 			text-align: center;
 
 		}
-		
+
 
 		/* Comments Page */
 		body.comments-page > .content {margin-top: 8px;}
@@ -3334,7 +3355,7 @@ vertical-align: middle;
 
 .flair-banned::after {
 	background: 0 0;
-	margin: 0 0 3px 5px;
+	margin: 0 0 0 5px;
 	width: inherit;
 	height: inherit;
 	content: " Banned User";
@@ -4116,7 +4137,7 @@ li>code,p>code{padding:0 3px;color:#222!important}
 .md [href$="#svirtual"] {
 	display: block;
 	background-image: url(%%linkflairs%%);
-	background-position: -3px -53px;
+	background-position: -3px -52px;
 	width: 100px;
 	height: 24px;
 }
@@ -4124,7 +4145,7 @@ li>code,p>code{padding:0 3px;color:#222!important}
 .md [href$="#modpost"] {
 	display: block;
 	background-image: url(%%linkflairs%%);
-	background-position: -3px -105px;
+	background-position: -3px -104px;
 	width: 100px;
 	height: 24px;
 }
@@ -4132,7 +4153,15 @@ li>code,p>code{padding:0 3px;color:#222!important}
 .md [href$="#hacked"] {
 	display: block;
 	background-image: url(%%linkflairs%%);
-	background-position: -3px -158px;
+	background-position: -3px -156px;
+	width: 100px;
+	height: 24px;
+}
+
+.md [href$="#ptcgo"] {
+	display: block;
+	background-image: url(%%linkflairs%%);
+	background-position: -3px -208px;
 	width: 100px;
 	height: 24px;
 }
@@ -4140,7 +4169,7 @@ li>code,p>code{padding:0 3px;color:#222!important}
 .md [href$="#giveaway"] {
 	display: block;
 	background-image: url(%%linkflairs%%);
-	background-position: -3px -184px;
+	background-position: -3px -182px;
 	width: 100px;
 	height: 24px;
 }
